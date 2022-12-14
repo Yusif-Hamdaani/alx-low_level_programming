@@ -1,21 +1,15 @@
-#include "_putchar.h"
-#include "main.h"
+#include "holberton.h"
+#include <unistd.h>
+
 /**
- * main - Print "_putchar" followed by a new line.
- * Description: You are not allowed to include standard libraries.
- * Return: 0
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
 */
-int main(void)
+int _putchar(char c)
 {
-	char_putchar[] = "_putchar";
-	int i = 0;
-	
-	while (_putchar[i] != '\0')
-	{
-		_putchar(_putchar[i]);
-		i++;
-	}
-	_putchar('\n');
-	
-	return (0);
+	return (write(1, &c, 1));
+
 }
