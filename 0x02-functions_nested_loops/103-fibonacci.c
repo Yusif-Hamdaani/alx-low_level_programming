@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - main block
  * Description: Print the sum of even Fibonacci numbers up to a fib value
@@ -14,7 +15,7 @@ int main(void)
 	{
 		if (j % 2 == 0)
 			total += j;
-		
+
 		k = j;
 		j += i;
 		i = k;
