@@ -1,1 +1,1 @@
-I am studying how to debug a code
+I am studying how to debug codes
