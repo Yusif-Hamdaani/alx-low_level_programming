@@ -4,7 +4,7 @@
  * main - main block
  * Description: Print the sum of even Fibonacci numbers up to a fib value
  * not exceeding 4,000,000.
- * Return:
+ * Return: 0
 */
 int main(void)
 {
