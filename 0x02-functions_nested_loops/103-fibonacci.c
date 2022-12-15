@@ -7,7 +7,6 @@
  * Return:
 */
 int main(void)
-	Return (0);
 {
 	int i = 1, j = 2, total = 0;
 	int k;
