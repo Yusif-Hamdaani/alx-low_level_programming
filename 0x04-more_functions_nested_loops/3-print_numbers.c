@@ -1,18 +1,19 @@
 #include "main.h"
 
 /**
- * print_numbers - prints 0-9 with a new line
- * Description: Uses headers to link and a nested loops to achieve goal
- * Return: void. no return.
+ * print_numbers - print 0123456789
+ *
+ * Return: void
 */
 
-void print_numbers(void)
+void print_numbers(void);
+void _putchar(void);
 {
-	int i = 0;
+	char c;
 
-	for (i = '0'; i < 10; i++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		_putchar(i + '0');
-	{
+	_putchar(c);
+	}
 	_putchar('\n');
 }
