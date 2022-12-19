@@ -15,5 +15,6 @@ while (c < 10)
 _putchar (c + '0');
 c++;
 }
+
 _putchar('\n');
 }
