@@ -1,4 +1,4 @@
-THIS IS ALL ABOUT C - POINTERS, ARRAYS AND STRINGS - PART 2
+THIS IS ALL ABOUT ALX 0X06: C - POINTERS, ARRAYS AND STRINGS - PART 2
 ----
 At the end of this project, we are expected to be able to explain to anyone, without the help of Google the following;
 
