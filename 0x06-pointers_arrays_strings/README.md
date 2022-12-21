@@ -1,5 +1,5 @@
 THIS IS ALL ABOUT C - POINTERS, ARRAYS AND STRINGS - PART 2
-
+----
 At the end of this project, we are expected to be able to explain to anyone, without the help of Google the following;
 
 What are pointers and how to use them
@@ -13,8 +13,9 @@ How to use strings and how to manipulate them
 Scope of variables
 --
 
-EACH SCRIPTS AND THEIR OUTPUT
 
+EACH SCRIPT AND ITS OUTPUT
+---
 0. strcat
 
 Write a function that concatenates two strings.
@@ -132,8 +133,8 @@ If size is 0 or less, the output should be a new line only \n
 You are allowed to use the standard library
 
 
-LIMITATIONS
-
+REQUIREMENTS
+---
 -Allowed editors: vi, vim, emacs
 
 -All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
