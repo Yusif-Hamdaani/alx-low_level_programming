@@ -1,5 +1,0 @@
-#!/bin/bash
-ltrace
-ldd
-gdb
-objdump
