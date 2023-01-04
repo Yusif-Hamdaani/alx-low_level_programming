@@ -1,14 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * * print_diagsums - print the sum of the two diagonals of a squeare matrix
- * *
- * * @a: pointer to an integer
- * * @size: int type
- * *
- * * Description: this print the chessboard
- * * Return: void
- * */
+ * print_diagsums - print the sum of the two diagonals of a squeare matrix
+ *
+ * @a: pointer to an integer
+ * @size: int type
+ *
+ * Description: this print the chessboard
+ * Return: void
+*/
 void print_diagsums(int *a, int size)
 {
 	int s;
