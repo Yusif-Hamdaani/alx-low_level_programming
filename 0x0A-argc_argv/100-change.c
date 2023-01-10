@@ -9,6 +9,7 @@
  * @argv: array of arguments
  * Return: 0 (Success), 1 (Error)
 */
+
 int main(int argc, char *argv[])
 {
 	int num, j, result;
@@ -17,6 +18,7 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
+		return (1);
 	}
 	num = atoi(argv[1]);
 	result = 0;
