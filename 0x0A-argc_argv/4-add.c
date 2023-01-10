@@ -1,48 +1,64 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 /**
- * main - adds numbers. checks if number
- * @argc: number of arguments
- * @argv: the vector that hold the arguments
+ * check_num - check - string there are digit
+ * @str: array str
  *
- * Description: using arc and argv to achieve the intended function
- * Return: returns 0 if it works or something else if error
- * A: if arg has no nunber inputs then print 0
- * B: if arg has some inputs loop the code via while loop, decrement argc
- * C: loop through the string of argv and check if anything not a digit
- * D: If it is not a digit then enter the error statement
- * E: add the atoi of the arg cause it passed the checks.
+ * Return: Always 0 (Success)
 */
 
-int main(int argc, char **argv)
+int check_num(char *str)
 {
-	int sum = 0;
-	int i = 1;
-	int j;
+	/*Declaring variables*/
+	unsigned int count;
 
-	if (argc == 1)/* A */
+	count = 0;
+	while (count < strlen(str)) /*count string*/
 	{
-		printf("0\n");
-		return (0);
-	}
-	while (argc > 1)/* B */
-	{
-		j = 0;
-		while (argv[i][j])/* C */
+		if (!isdigit(str[count])) /*check if str there are digit*/
 		{
-			if (!isdigit(argv[i][j]))/* D */
-			{
-				printf("Error\n");
-				return (1);
-			}
-			j++;
+			return (0);
 		}
-		sum += atoi(argv[i]);/* E */
-		i++;
+		count++;
 	}
-	printf("%i\n", sum);
+	return (1);
+}
+
+/**
+ * main - Print the name of the program
+ *
+ * @argc: Count arguments
+ * @argv: Arguments
+ *
+ * Return: Always 0 (Success)
+*/
+
+int main(int argc, char *argv[])
+{
+	/*Declaring variables*/
+	int count;
+	int str_to_int;
+	int sum = 0;
+
+	count = 1;
+	while (count < argc) /*Goes through the whole array*/
+	{
+		if (check_num(argv[count]))
+		{
+			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
+			sum += str_to_int;
+		}
+		/*Condition if one of the number contains symbols that are not digits*/
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		count++;
+	}
+	printf("%d\n", sum); /*print sum*/
 	return (0);
 }
