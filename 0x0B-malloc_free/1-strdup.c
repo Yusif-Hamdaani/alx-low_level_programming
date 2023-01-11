@@ -4,7 +4,7 @@
 /**
  * _strdup - returns a pointer to newly allocated memory
  * @str: a string given by main
- * Description: the returned memory allocation has 
+ * Description: the returned memory allocation has
  * a copy of the string and can be freed
  * Return: the pointer or null if string is null
 */
