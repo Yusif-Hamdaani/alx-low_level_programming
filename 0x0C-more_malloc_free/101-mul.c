@@ -121,13 +121,12 @@ void print_me(int *sum_result, int len_r)
 	while (sum_result[i] == 0 && i < len_r)
 		i++;
 	if (i == len_r)
-		putchar('0');
+		_putchar('0');
 	while (i < len_r)
-		putchar(sum_result[i++] + '0');
-	putchar('\n');
+		_putchar(sum_result[i++] + '0');
+	_putchar('\n');
 }
 /**
- * print_me - prints my array of the hopeful product here
  * main - multiply 2 input #'s of large lengths and print result or print Error
  * @argc: input count of args
  * @argv: input array of string args
