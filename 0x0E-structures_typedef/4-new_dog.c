@@ -17,6 +17,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int namerunner, ownerrunner;
 	/* allocate the *new_dog function and test if is null or not */
 	dog_t *new_dog = malloc(sizeof(dog_t));
+
 	if (new_dog == NULL)
 		return (new_dog);
 	/* time to know the size of the *name and *owner */
