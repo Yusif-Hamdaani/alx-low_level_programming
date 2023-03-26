@@ -1,31 +1,24 @@
 #include "main.h"
-
 /**
- * _strstr - locate substring
- * @haystack: the string to search
- * @needle: the string to finde
+ * _strstr - ffind the first occurrence
  *
- * Return: char value
- */
+ * @haystack: string
+ * @needle: substring
+ *
+ * Return: a pointer to needle or NULL if no byte is found
+*/
 char *_strstr(char *haystack, char *needle)
 {
-int a = 0, b = 0;
-while (haystack[a])
-{
-while (needle[b])
-{
-if (haystack[a + b] != needle[b])
-{
-break;
-}
-b++;
-}
-if (needle[b] == '\0')
-{
-return (haystack + a);
-}
-a++;
-}
+	while (*haystack != 0)
+	{
+		char *a = haystack;
+		char *b = needle;
 
-return ('\0');
+		while (*haystack == *b && *b != 0 && *haystack != 0)
+			haystack++, b++;
+		if (*b == 0)
+			return (a);
+		haystack = ++a;
+	}
+	return (0);
 }
